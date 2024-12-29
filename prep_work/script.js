@@ -73,3 +73,13 @@ console.log('arraySum after adding test array', arraySum);*/
 //   else if(loopy % 3 === 0) {console.log(loopy, "LOOPY");}
 //   else if(loopy % 4 === 0) {console.log(loopy, "LIGHTHOUSE");}
 // }
+
+const donuts = ["glazed", "chocolate", "boston cream", "powdered", "sprinkles", "maple", "coconut", "jelly"];
+
+console.log(donuts[6]);
+
+donuts[6] = "almond";
+
+console.log(donuts[6]);
+
+
