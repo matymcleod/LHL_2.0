@@ -64,3 +64,12 @@ console.log('arraySum after adding test array', arraySum);*/
 //   else if(num === 0) {console.log(": Lift Off");}
 //   num--
 // }
+
+
+// Loopy Lighthouse -
+
+// for(let loopy = 100; loopy <= 200; loopy++) {
+//   if(loopy % 12 === 0) {console.log(loopy, "LOOPYLIGHTHOUSE")}
+//   else if(loopy % 3 === 0) {console.log(loopy, "LOOPY");}
+//   else if(loopy % 4 === 0) {console.log(loopy, "LIGHTHOUSE");}
+// }
