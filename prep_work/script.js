@@ -74,12 +74,33 @@ console.log('arraySum after adding test array', arraySum);*/
 //   else if(loopy % 4 === 0) {console.log(loopy, "LIGHTHOUSE");}
 // }
 
+// Arrays and basic methods
 const donuts = ["glazed", "chocolate", "boston cream", "powdered", "sprinkles", "maple", "coconut", "jelly"];
 
-console.log(donuts[6]);
+// console.log(donuts[6]);
 
-donuts[6] = "almond";
+// donuts[6] = "almond";
 
-console.log(donuts[6]);
+// console.log(donuts[6]);
 
+// donuts.forEach(function(donut){
+//   donut += " hole";
+//   console.log(donut);
+// })
 
+// const numberArray = [1, 2, 3, 4, 5]
+
+// numberArray.forEach(function(add){
+//   add += 2
+//   console.log(add);
+// })
+
+const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+
+test.forEach(function(addHundred){
+  if(addHundred % 3 === 0) {
+    console.log("before", addHundred)
+    addHundred += 100;
+    console.log("after", addHundred);
+  }
+})
