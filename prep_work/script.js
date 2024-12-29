@@ -75,7 +75,7 @@ console.log('arraySum after adding test array', arraySum);*/
 // }
 
 // Arrays and basic methods
-const donuts = ["glazed", "chocolate", "boston cream", "powdered", "sprinkles", "maple", "coconut", "jelly"];
+// const donuts = ["glazed", "chocolate", "boston cream", "powdered", "sprinkles", "maple", "coconut", "jelly"];
 
 // console.log(donuts[6]);
 
@@ -95,12 +95,28 @@ const donuts = ["glazed", "chocolate", "boston cream", "powdered", "sprinkles", 
 //   console.log(add);
 // })
 
-const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
+// const test = [12, 929, 11, 3, 199, 1000, 7, 1, 24, 37, 4, 19, 300, 3775, 299, 36, 209, 148, 169, 299, 6, 109, 20, 58, 139, 59, 3, 1, 139];
 
-test.forEach(function(addHundred){
-  if(addHundred % 3 === 0) {
-    console.log("before", addHundred)
-    addHundred += 100;
-    console.log("after", addHundred);
+// test.forEach(function(addHundred){
+//   if(addHundred % 3 === 0) {
+//     console.log("before", addHundred)
+//     addHundred += 100;
+//     console.log("after", addHundred);
+//   }
+// })
+
+// const mapArray = test.map(function(element){
+//   element += 100;
+//   return element;
+// })
+// console.log(test);
+// console.log(mapArray);
+
+const bills = [50.23, 19.12, 34.01, 100.11, 12.15, 9.90, 29.11, 12.99, 10.00, 99.22, 102.20, 100.10, 6.77, 2.22];
+
+const totals = bills.map(function(total){
+  total *= 1.15;
+  return Number(total.toFixed()); // Converts string to number and toFixed method rounds to a max of 2 decimal places
   }
-})
+)
+console.log(totals);
