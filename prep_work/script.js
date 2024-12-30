@@ -147,25 +147,70 @@ console.log('arraySum after adding test array', arraySum);*/
 
 // OBJECTS
 
-const umbrella = {
-  color: "pink",
-  isOpen: true,
-  open: function() {
-    if(umbrella.isOpen === true){
-      return "The umbrella is already open!"
-    } else {
-      umbrella.isOpen = true;
-      return "Maty opens the umbrella"
-    }
-  },
-  close: function() {
-    if(umbrella.isOpen === false) {
-      return "The umbrella is already closed"
-    } else {
-      umbrella.isOpen = false;
-      return "Maty closed the umbrella"
-    }
-  }
-};
+// const umbrella = {
+//   color: "pink",
+//   isOpen: true,
+//   open: function() {
+//     if(umbrella.isOpen === true){
+//       return "The umbrella is already open!"
+//     } else {
+//       umbrella.isOpen = true;
+//       return "Maty opens the umbrella"
+//     }
+//   },
+//   close: function() {
+//     if(umbrella.isOpen === false) {
+//       return "The umbrella is already closed"
+//     } else {
+//       umbrella.isOpen = false;
+//       return "Maty closed the umbrella"
+//     }
+//   }
+// };
 
-console.log(umbrella.close(), umbrella.open());
+// // console.log(umbrella.close(), umbrella.open());
+
+// const breakfast = {
+//   menuItem: "The Lumberjack",
+//   price: 9.95,
+//   options: ["eggs", "sausage", "toast", "hashbrowns", "pancakes"]
+// }
+
+// // console.log(breakfast.options[0]);
+// // console.log(breakfast.price);
+
+// const savingsAccount = {
+//   balance: 1000,
+//   interestRatePercent: 1,
+//   deposit: function addMoney(amount) {
+//     if(amount > 0) {
+//       savingsAccount.balance += amount;
+//     }
+//   },
+//   withdraw: function removeMoney(amount) {
+//     let verifyBalance = savingsAccount.balance - amount;
+//     if(amount > 0 && verifyBalance >= 0) {
+//       savingsAccount.balance -= amount;
+//     }
+//   },
+//   printAccountSummary: function() {
+//     return `Welcome!\nYour balance is currently \$${savingsAccount.balance} and your interest rate is ${savingsAccount.interestRatePercent}\%`
+//   }
+// }
+// console.log(savingsAccount.printAccountSummary())
+// savingsAccount.withdraw(500);
+// console.log(savingsAccount.printAccountSummary())
+// savingsAccount.deposit(5000);
+// console.log(savingsAccount.printAccountSummary())
+
+const facebookProfile = {
+  name: "Maty",
+  friends: 0,
+  messages: ["fuck Trump", "fuck Politics", "fuck the world"],
+  postMessage: function(message){
+   messages = facebookProfile.messages.push(message);
+  }
+}
+
+facebookProfile.postMessage("fuck this shit");
+console.log(facebookProfile.messages);
