@@ -213,4 +213,23 @@ const facebookProfile = {
 }
 
 facebookProfile.postMessage("fuck this shit");
-console.log(facebookProfile.messages);
+// console.log(facebookProfile.messages);
+
+const arr1 = ["a", "b", "C", "d", "e", "f"];
+const arr2 = [1, 2, 3, 4, 5, 6]
+console.log('arr1 ==>>',arr1);
+
+// const arrMethod = arr1.push("hello"); // push adds elements to the end of an array and mutates the original array
+// const arrMethod = arr1.pop(); // pop removes the last element of the array and mutates the original array
+// const arrMethod = arr1.shift(); // shift removes the first element of an array and mutates the original array
+// const arrMethod = arr1.unshift(); // unshift adds given elements to the start of an array and mutates the original array.
+// const arrMethod = arr1.splice(1,2); // splice removes elements from a given index range and mutated the original array.
+// const arrMethod = arr1.splice(0, 4, "peepee", "poopoo");
+const arrMethod = arr1.slice(1, 2); // slice removes a specified range with a given start index and end index and does not mutate the original array
+// const arrMethod = arr1.sort();
+// const arrMethod = arr1.concat();
+// const arrMethod = arr1.map();
+// const arrMethod = arr1.filter();
+
+console.log('arr1 after array method is called ==>>',arrMethod);
+console.log('arr1 check if mutated ==>>',arr1);
